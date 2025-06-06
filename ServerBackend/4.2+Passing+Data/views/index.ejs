@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Name Letters</title>
+</head>
+
+<body>
+  <!-- Write your code here -->
+   <%if(locals.print){%>
+      <h1>Enter your name below</h1>
+   <%}%>
+  <!-- If check we have tot or not-->
+  <% if(locals.tot) {%>
+     <h1>There are <%=tot%> letters in your name.</h1>  
+ <%}%>
+    <form action="/sub" method="POST">
+    <input type="text" name="fName" placeholder="First name">
+    <input type="text" name="lName" placeholder="Last name">
+    <input type="submit" value="SUBMIT">
+  </form>
+</body>
+</html>

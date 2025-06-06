@@ -1,0 +1,1 @@
+alert("Wecome to external Javascript adding method");

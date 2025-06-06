@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Changing and style html Element with JavaScript</title>
+  <!--Adding the css with internal way --> 
+   <style>
+    body{
+        background-color:lightblue;
+    }
+    .container{
+      height:80px;
+      width:250px;
+      background-color:green;
+      color:white;
+      border:2px solid black;
+    }
+</style> 
+</head>
+    
+<body>
+  <div class="container">
+    <h1>GeeksForGeeks</h1>
+  </div>
+  <p> Click the button to show or hide the box</p>
+  <button onclick="showElement()">Show Element</button>
+  <button onclick="hideElement()">Hide Element</button>
+  <!--Adding the Javascript with internal way -->
+  <script type="text/JavaScript">
+    // Function to visible the box
+    function showElement()
+    {
+     var element=document.querySelector("div");
+     element.style.visibility="visible";
+    }
+    // Function to hide the box
+    function hideElement()
+    {
+     var element=document.querySelector("div");
+     element.style.visibility="hidden";
+    }
+    </script>
+</body>
+</html>

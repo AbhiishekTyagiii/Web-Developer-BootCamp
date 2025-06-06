@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Manipulation of HTML Element using javascript</title>
+    <!--Adding css through Internal way -->
+    <style>
+     .container{
+        height:80px;
+        width:220px;
+        border:2px solid firebrick;
+        background-color: green;
+        color:white;
+     }
+    </style>
+</head>
+<body>
+ <div class="container">
+    <h1>GeeksforGeeks</h1>
+ </div>
+ <p>click the button to show or hide the box</p>
+ <button onclick="showElement()">show element</button>
+ <button onclick="hideElement()">Hide Element</button>
+ <!--Adding javascript through Internal way --> 
+ <script type="text/javaScript" >
+  function showElement()
+  {
+    document.querySelector(".container").style.visibility="visible";
+  }
+  function hideElement()
+  {
+    document.querySelector(".container").style.visibility="hidden";
+  }
+ </script>  
+</body>
+</html>

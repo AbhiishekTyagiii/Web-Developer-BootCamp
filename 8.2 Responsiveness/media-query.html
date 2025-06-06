@@ -11,18 +11,18 @@
       height: 300px;
       width: 300px;
     }
-
-    @media (max-width: 300px) {
-
-      /* CSS for screens below or equal to 600px wide */
+    /* Breakpoint */
+    @media (max-width: 300px) or (min-width:400px) {
+    /* CSS for screens below or equal to 600px wide */
       div {
-        height: 100px;
-        width: 100px;
+        height: 150px;
+        width: 150px;
+        background-color:firebrick;
+        border-radius:12%;      
       }
     }
   </style>
 </head>
-
 <body>
   <h1>Media Query</h1>
   <div></div>

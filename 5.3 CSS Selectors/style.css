@@ -5,18 +5,27 @@ ol {
 }
 
 /* Write your CSS below, don't change the rules above. */
+
+
+/* element selector */
 p{
-color: red
+  color:red;
 }
+/*Id selector  */
+#id-selector-demo
+{
+ color:green;
+}
+/* Attribute selector*/
+li[value="4"]
+{
+  color:blue;
+}
+/* class Selector */
 .note{
-  font-size: 20px
-  }
-  #id-selector-demo{  
-  color: green
-  }
- li[value="4"]{
-  color: blue
- }
- *{
- text-align: center
- }
+  font: size 20px; ;
+}
+/*Universal selector*/
+*{
+  text-align: center;
+}

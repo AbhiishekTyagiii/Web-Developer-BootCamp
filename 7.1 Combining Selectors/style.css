@@ -1,21 +1,23 @@
 /* Write your code here: */
-/*Group */
+
+/* Group selector */
 h1,h2{
-    color:blueviolet
+    color:blueviolet;
 }
-/*Child*/
-div >p{
+/* Child selector */
+.box>p{
     color:firebrick;
 }
-/* Descendant */
+/* Descendent selector */ 
 .box li{
     color:blue;
 }
-/* Chaining */
+/* chaining selector */
 li.done{
-    color:green;
+    color:seagreen;
 }
-ul > p.done{
-    font-size:0.5rem;
+/* child selector */
+ul>p.done{
+    font-size: 0.5rem;
 }
 
